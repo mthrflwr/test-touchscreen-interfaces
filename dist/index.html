@@ -12,9 +12,107 @@
     </head>
     <body>
 
+<!--NAV-->
+
+<nav class="uk-navbar-container uk-margin">
+            <div class="uk-container">
+                <div class="uk-navbar">
+                    <div class="uk-navbar-left">
+
+                        <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Parent</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="uk-navbar-right">
+
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Parent</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+
+                        <div class="uk-navbar-item">
+                            <ul class="uk-grid-small" uk-grid>
+                                <li>
+                                    <a class="uk-icon-button" href="#" uk-icon="icon: trash"></a>
+                                </li>
+                                <li>
+                                    <a class="uk-icon-button" href="#" uk-icon="icon: trash"></a>
+                                </li>
+                                <li>
+                                    <a class="uk-icon-button" href="#" uk-icon="icon: trash"></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
 
 
+<!--START TILES-->
 
+ <div class="uk-section">
+            <div class="uk-child-width-1-2@s uk-child-width-1-4@l uk-grid-collapse uk-grid-match" uk-grid>
+                <div>
+
+                    <div class="uk-tile uk-tile-default">
+                        <h3>Tile Default</h3>
+                        <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p uk-margin>
+                            <a class="uk-button uk-button-default" href="#">Button</a>
+                            <a class="uk-button uk-button-text uk-margin-small-left" href="#">Button</a>
+                        </p>
+                    </div>
+
+                </div>
+                <div>
+
+                    <div class="uk-tile uk-tile-muted">
+                        <h3>Tile Muted</h3>
+                        <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p uk-margin>
+                            <a class="uk-button uk-button-default" href="#">Button</a>
+                            <a class="uk-button uk-button-text uk-margin-small-left" href="#">Button</a>
+                        </p>
+                    </div>
+
+                </div>
+                <div>
+
+                    <div class="uk-tile uk-tile-primary">
+                        <h3>Tile Primary</h3>
+                        <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p uk-margin>
+                            <a class="uk-button uk-button-default" href="#">Button</a>
+                            <a class="uk-button uk-button-text uk-margin-small-left" href="#">Button</a>
+                        </p>
+                    </div>
+
+                </div>
+                <div>
+
+                    <div class="uk-tile uk-tile-secondary">
+                        <h3>Tile Secondary</h3>
+                        <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p uk-margin>
+                            <a class="uk-button uk-button-default" href="#">Button</a>
+                            <a class="uk-button uk-button-text uk-margin-small-left" href="#">Button</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+<!--START OFF CANVAS-->
 
 <div class="uk-offcanvas-content">
 
@@ -41,7 +139,7 @@
                     </div>
 
                 </article>
-
+<hr>
 <!-- start off canvas nav -->
 
  <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay">Open</button>
@@ -59,7 +157,7 @@
         </div>
     </div>
 
-
+<hr>
         <!-- start card -->        
 
 
@@ -74,9 +172,31 @@
         <div class="uk-card uk-card-default uk-card-body">Item<br>...<br>...</div>
     </div>
 </div>
+</div>
+         
 
+<div class="uk-section uk-section-secondary">
+            <div class="uk-container">
 
+                <h1>Section Secondary</h1>
 
+                <div class="uk-grid-match uk-child-width-1-3@m uk-grid uk-grid-stack" uk-grid="">
+                    <div class="uk-first-column">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="uk-grid-margin uk-first-column">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="uk-grid-margin uk-first-column">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+<!-- accord -->
+   <div class="uk-container">
 
                     <ul uk-accordion>
                         <li class="uk-open">
@@ -104,7 +224,7 @@
 
                         </li>
                     </ul>
-
+<hr>
 <!-- START LOADER -->              
 
 <progress id="progressbar" class="uk-progress" value="10" max="100"></progress>
@@ -126,7 +246,7 @@
     });
 
 </script>
-
+<hr>
 
 <!-- START TIMER -->
 
@@ -151,7 +271,7 @@
         <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Seconds</div>
     </div>
 </div>
-
+<hr>
 
 
 <!-- START MARGIN -->
@@ -161,7 +281,7 @@
     <button class="uk-button uk-button-primary uk-button-large">Large button</button>
     <button class="uk-button uk-button-secondary uk-button-large">Large button</button>
 </p>
-
+<hr>
 
 
 <!-- START SEARCH -->
@@ -170,7 +290,7 @@
     <span uk-search-icon></span>
     <input class="uk-search-input" type="search" placeholder="Search...">
 </form>
-
+<hr>
 
 <!--START CARDS-->
 
@@ -195,6 +315,7 @@
         <div class="uk-card uk-card-secondary uk-card-body">
             <h3 class="uk-card-title">Secondary</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <hr>
         </div>
     </div>
 </div>
